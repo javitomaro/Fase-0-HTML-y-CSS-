@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Listas</title>
+    </head>
+    <body>
+        <!-- Listas ordenadas -->
+        <!--
+            ol = lista general ordenada
+                -- Atributos ---
+                type = tipo de numeracion de la lista (por defecto numero)
+                start = numero que quiero que empiece la lista
+                ----------------
+            li = linea de lista
+            -->
+        <ol type="a" start="7">
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+        </ol>
+        
+        <!-- Listas No ordenadas -->
+        <!--
+            ul = lista general no ordenada
+                -- Atributos ---
+                type = DEPRECATED 
+                se usa style="list-style-type: square;"
+                    - disc
+                    - circle
+                    - square
+                ----------------
+            li = linea de lista
+            -->
+        <ul style="list-style-type: square;">
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento</li>
+        </ul>
+        
+        <!-- Anidar listas --->
+        <ol>
+            <li>Elemento</li>
+            <li>Elemento</li>
+            <li>Elemento
+                <ul style="list-style-type: square;">
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                    <li>Elemento</li>
+                </ul>
+            </li>
+            <li>Elemento</li>
+        </ol>
+        
+        <!-- Listas de definición-->
+        <!--
+            dl = definition list (lista)
+            dt = definition term (termino)
+            dd = deifnition data (datos)
+        -->
+        <dl>
+            <dt>Photoshop</dt>
+            <dd>Software para edición profesional de imagenes de propiedad de Adobe</dd>
+            <dt>GIMP</dt>
+            <dd>Software para edición profesional de imagenes con licencia GNU</dd>
+            <dt>Illustrator</dt>
+            <dd>Software para ilustración profesional propiedad de Adobe</dd>
+        </dl>
+    </body>
+</html>

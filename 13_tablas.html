@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tablas</title>
+    </head>
+    <body>
+        <!-- Tablas -->
+        <!-- 
+            table = crear la tabla
+                -- Atributos -- 
+                border = el borde que tiene la tabla 
+                width = ancho DEPRECATED
+                cellspacing = ancho del espacio DEPRECATED
+                cellpadding = separacion dentro de la celda DEPRECATED
+                ---------------
+            caption = Titulo de la tabla
+            thead = elementos de cabecera
+            tbody = elementos del cuerpo
+            tfoot = elementos del pie de tabla
+            tr = fila
+            th = columna titulo (centrado y negrita)
+            td = columna dato (izquierda y normal)
+                -- Atributos -- 
+                rowspan = juntar filas
+                colspan = juntar columnas
+                ---------------
+            &nbsp; =  espacio en blanco
+        -->
+        <table border="1" width="350" cellspacing="4" cellpadding="5">
+            <caption>
+                Tabla de posiciones
+            </caption>
+            <thead>
+                <tr>
+                    <th>Equipo</th>
+                    <th>Puntos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rojo</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>Amarillo</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>Azul</td>
+                    <td rowspan="2">7</td>
+                </tr>
+                <tr>
+                    <td>Naranja</td>
+                    <!--<td>7</td>-->
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Posiciones despues de 6 partidos</td>
+                    <!--<td>&nbsp;</td>-->
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

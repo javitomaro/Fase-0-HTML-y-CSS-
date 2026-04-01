@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Formularios</title>
+    </head>
+    <body>
+        <!-- FORMULARIOS
+            action = es donde se va a gestionar esos datos
+            method = como va a gestionar los datos (get o post)
+            get = cuando se envian pocos datos de manera publica (limitado)
+            post = cuando se adjuntan archivos o cuando supera la limitacion de get, oculto
+        -->
+        <form action="#" method="post">
+            <!-- Elementos de texto -->
+            Nombre: <input type="text" name="usuario" size="15" maxlength="15" /><br />
+            Password: <input type="password" name="password" size="15" maxlength="10" /><br />
+            Comentarios <br />
+            <textarea name="comentarios" cols="20" rows="4" id="234"></textarea>
+            <hr />
+            <!-- Checkbox -->
+            Aplicación de música: <br />
+            <input type="checkbox" name="servicio" value="iTunes" />iTunes <br />
+            <input type="checkbox" name="servicio" value="Spotify" checked />Spotify <br />
+            <input type="checkbox" name="servicio" value="YouTube" />Youtube <br />
+            <hr />
+            <!-- Radio Button -->
+            Selecciona tu género: <br />
+            <input type="radio" name="genero" value="masculino" />Masculino<br />
+            <input type="radio" name="genero" value="femenino" />Femenino<br />
+            <input type="radio" name="genero" value="no contesta" checked />Prefiero no contestar<br />
+            <hr />
+            <!-- Menú de selección -->
+            Dispositivo que utilizas para escuchar música: <br />
+            <select name="dispositivo">
+                <option value="iPod">iPod</option>
+                <option value="radio">Radio</option>
+                <option value="movil">Móvil</option>
+                <option value="" selected>Dispositivo para escuchar música</option>
+            </select>
+            <hr />
+            <!-- Lista de selección -->
+            Dispositivo que utilizas para escuchar música: <br />
+            <select name="dispositivo" size="4" multiple>
+                <option value="iPod">iPod</option>
+                <option value="radio">Radio</option>
+                <option value="movil">Móvil</option>
+                <option value="">Dispositivo para escuchar música</option>
+            </select>
+            <hr />
+            <!-- Label -->
+            <label for="edad">Edad:</label>
+            <input type="text" name="edad" />
+            <hr />
+            <!-- Fieldset y Legend -->
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <label for="email">Email:</label>
+                <input type="text" name="email" /> <br />
+                <label for="telefono">Teléfono:</label>
+                <input type="text" name="telefono" /> <br />
+                <label for="movil">Móvil:</label>
+                <input type="text" name="movil" /> <br />
+            </fieldset>
+            <hr />
+            <!-- Submit (botón de enviar) revisa los atributos de action y method del form-->
+            <input type="submit" name="inscripcion" value="Inscripción">
+        </form>
+    </body>
+</html>
